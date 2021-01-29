@@ -31,8 +31,8 @@ while($ligne = fgets($text)){
 
 // TODO Votre code ici.
 
-$file = fopen('lire.txt', 'rb');
-while($char = fgetc($file)){
+$filee = fopen('lire.txt', 'rb');
+while($char = fgetc($filee)){
     if ($char !== '?' && $char !== ' ' && $char !== '!' && $char !== ','){
         echo $char;
     }
@@ -44,3 +44,5 @@ while($char = fgetc($file)){
  */
 
 fclose($text);
+fclose($filee);
+fclose($file);
